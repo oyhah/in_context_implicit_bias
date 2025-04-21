@@ -13,6 +13,8 @@ app.get('/status', OpenAIController.getStatus);
 
 app.post('/openai/chat', OpenAIController.postSingleChat);
 
+app.post('/openai/looping', OpenAIController.twoNumberFixedIterationChat);
+
 app.listen(PORT, () => {
   console.log("Server Listening on PORT:", PORT);
 });
