@@ -1,7 +1,8 @@
 const fs = require('fs');
 
-// TODO: get key from .env file
-const openai_key = '';
+require('dotenv').config();
+
+const openai_key = process.env.OPENAI_KEY;
 const chatgpt_url = 'https://api.openai.com/v1/chat/completions';
 
 const getStatus = async (req, res) => {

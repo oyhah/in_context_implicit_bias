@@ -7,6 +7,8 @@ This allows more controlled and methodic data generation, especially given the l
 
 ### How to run
 
+Create file ```server/.env``` with content ```OPENAI_KEY=<your key>``` to be used by the program.
+
 In the ```server``` folder, run ```npm start```. This would host the server. The default port is 3000.
 
 Make a get request to ```http://127.0.0.1:3000/status``` to test that the server is running.

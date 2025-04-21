@@ -4,6 +4,8 @@ const OpenAIController = require('./openai');
 const app = express();
 app.use(express.json());
 
+require('dotenv').config();
+
 const PORT = process.env.PORT || 3000;
 
 // routes
